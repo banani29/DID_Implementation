@@ -38,23 +38,23 @@ Result: Estimated DiD coefficient = 0.5686
 
 Robustness Checks
 
-✅ Exclude Outliers
+1. Exclude Outliers
 
 Treatment effect held at ~74% after removing top 1% spenders.
 
-✅ Placebo Tests
+2. Placebo Tests
 
 Injected a fake treatment before the real one — significant effect observed, indicating some sensitivity. Reinforces the need for careful interpretation.
 
-✅ Alternative Controls
+3. Alternative Controls
 
 Re-ran DiD using users with even IDs as new controls. Coefficient (0.5765) consistent with original → high robustness.
 
-✅ Vary Pre/Post Window
+4. Vary Pre/Post Window
 
 Tested 2-week and 4-week windows. Coefficients (~0.603) were stable → effect not driven by time window choice.
 
-✅ Covariate Sensitivity
+5. Covariate Sensitivity
 
 Adding session_activity and annual_purchase_value did not change the treatment coefficient. These variables were absorbed by fixed effects → model specification is stable.
 
